@@ -1,0 +1,41 @@
+.philosophy__list {
+  display: flex;
+}
+
+.philosophy__list {
+  width: 270px;
+}
+
+.philosophy__item {
+  margin-right: 30px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.philosophy__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.philosophy__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.philosophy__icon {
+  display: block;
+  width: 270px;
+  height: 120px;
+  padding: 25px 100px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+}
+
+.philosophy {
+  padding-bottom: 47px;
+}
