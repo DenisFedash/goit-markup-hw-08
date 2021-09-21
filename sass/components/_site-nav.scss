@@ -1,24 +1,4 @@
-.nav {
-  display: flex;
-  align-items: center;
-}
-
-.site-nav {
-  display: flex;
-  margin-left: 93px;
-}
-.site-nav__item {
-  margin-right: 50px;
-  &:last-child {
-    margin-right: 0;
-  }
-}
-
 .site-nav__link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;

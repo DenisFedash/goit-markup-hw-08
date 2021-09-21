@@ -24,12 +24,3 @@
   transition-duration: 250ms;
   transition-timing-function: var(--cubic-bezier);
 }
-
-.clients-list {
-  display: flex;
-  justify-content: center;
-}
-
-.clients-list__item:not(:last-child) {
-  margin-right: 30px;
-}

@@ -1,5 +1,4 @@
 .form-title {
-  display: inline-block;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -10,12 +9,7 @@
   margin-bottom: 20px;
 }
 
-.subscribe {
-  padding-left: 93px;
-}
-
 .subscribe__title {
-  display: block;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14em;
@@ -42,12 +36,8 @@
   cursor: pointer;
 }
 
-.subscribe__field {
-  display: flex;
-}
-
 .subscribe__input {
-  width: 340px;
+  // width: 340px;
   margin-right: 12px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   background-color: rgba(47, 48, 58, 1);
