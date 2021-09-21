@@ -2,6 +2,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
@@ -21,7 +22,13 @@
 
 .philosophy__item {
   @media screen and (min-width: 768px) {
-    width: 50%;
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    width: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
   }
 }
 
@@ -33,6 +40,8 @@
   margin-bottom: 30px;
 }
 
-.philosophy__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .philosophy__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }

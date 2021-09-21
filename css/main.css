@@ -389,6 +389,7 @@ img {
   .philosophy__list {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
@@ -408,7 +409,15 @@ img {
 
 @media screen and (min-width: 768px) {
   .philosophy__item {
-    width: 50%;
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .philosophy__item {
+    width: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
   }
 }
 
@@ -420,8 +429,16 @@ img {
   margin-bottom: 30px;
 }
 
-.philosophy__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .philosophy__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 1599px) {
+  .activity {
+    display: none;
+  }
 }
 
 .title {
@@ -463,8 +480,8 @@ img {
 }
 
 .team__title {
+  text-align: center;
   color: var(--title-text-color);
-  justify-content: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -473,6 +490,7 @@ img {
 }
 
 .team__text {
+  text-align: center;
   font-size: 16px;
   line-height: 1.18;
   margin-top: 0;
@@ -483,6 +501,12 @@ img {
   background-color: var(--background-color);
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+}
+
+@media screen and (max-width: 767px) {
+  .team__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .team__image {
