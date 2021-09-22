@@ -3,16 +3,20 @@
     display: none;
   }
 }
-.title {
-  color: var(--title-text-color);
-  margin-bottom: 50px;
 
-  font-family: Roboto;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.17em;
-  text-align: center;
-  letter-spacing: 0.03em;
+.activity__list {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.activity__item {
+  margin-right: 30px;
+}
+
+.activity__item:last-child {
+  margin-right: 0;
 }
 
 .activity__item {
@@ -29,7 +33,6 @@
   text-transform: uppercase;
   padding-top: 27px;
   padding-bottom: 27px;
-
   position: absolute;
   bottom: 0;
   left: 0;
