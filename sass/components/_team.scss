@@ -2,6 +2,14 @@
   background-color: #f5f4fa;
 }
 
+.team__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
 .team__title {
   text-align: center;
   color: var(--title-text-color);
@@ -29,6 +37,9 @@
     @media screen and (max-width: 767px) {
       margin-bottom: 30px;
     }
+  }
+  @media screen and (min-width: 768px) {
+    margin: 15px;
   }
 }
 
