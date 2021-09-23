@@ -30,7 +30,7 @@
   font-size: 16px;
   line-height: 1.18;
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 
 .team__item {
@@ -54,7 +54,9 @@
 }
 
 .team__image {
+  display: block;
   margin-top: 0;
+  margin-bottom: 30px;
 }
 
 .team-socials__link {
