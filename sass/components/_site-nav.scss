@@ -1,9 +1,25 @@
+.nav {
+  display: flex;
+}
+
+.site-nav + .contacts {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
 .site-nav__link {
   color: var(--title-text-color);
+  font-family: Roboto;
+  font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 40px;
+  line-height: 1.17em;
   letter-spacing: 0.02em;
+
+  // font-size: 14px;
+  // line-height: 1.14;
+
   position: relative;
   transition-duration: 250ms;
   transition-timing-function: var(--cubic-bezier);

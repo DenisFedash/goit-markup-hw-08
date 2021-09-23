@@ -17,7 +17,7 @@
   background-position: center;
   background-color: black;
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -43,11 +43,9 @@
     padding-right: 189px;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.36;
-    padding-left: 437px;
-    padding-right: 437px;
   }
 }
 

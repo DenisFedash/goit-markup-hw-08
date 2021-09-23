@@ -1,0 +1,30 @@
+.page-header {
+  position: relative;
+}
+.menu-toggle {
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  & .close {
+    display: none;
+  }
+
+  &.js-open-menu .close {
+    display: block;
+  }
+  &.js-open-menu .menu {
+    display: none;
+  }
+}
+
+.menu-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 796px;
+  background-color: var(--background-color);
+  padding: 20px;
+  font-size: 20px;
+}

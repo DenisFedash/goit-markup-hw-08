@@ -1,3 +1,9 @@
+.footer-socials {
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+  }
+}
+
 .social-list__item {
   width: 44px;
   height: 44px;
@@ -20,6 +26,15 @@
 
 .social-list {
   display: flex;
+
+  @media screen and (max-width: 1199px) {
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 
 .social-list__link {
