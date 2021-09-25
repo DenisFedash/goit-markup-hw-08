@@ -4,6 +4,25 @@
   font-size: 14px;
   line-height: 1.14em;
   letter-spacing: 0.02em;
+  margin-left: auto;
+
+  @media screen and(min-width:768px) {
+    display: block;
+  }
+
+  @media screen and(min-width:1200px) {
+    display: flex;
+  }
+}
+
+.contacts__item:not(:last-child) {
+  @media screen and(max-width:1199px) {
+    margin-bottom: 10px;
+  }
+
+  @media screen and(min-width:1200px) {
+    margin-right: 50px;
+  }
 }
 
 .contacts__link {
@@ -19,6 +38,7 @@
 }
 
 .contacts__icons {
+  vertical-align: middle;
   transition-duration: 250ms;
   transition-timing-function: var(--cubic-bezier);
 }

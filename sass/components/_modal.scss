@@ -2,9 +2,11 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.2);
   width: 100%;
   height: 100%;
+  padding: 93px 15px;
+  overflow-y: scroll;
+  z-index: 999;
   opacity: 1;
   transition: 250ms var(--cubic-bezier);
   &.is-hidden .modal {
@@ -15,22 +17,40 @@
     opacity: 0;
     pointer-events: none;
   }
+
+  &.is-hidden {
+    display: none;
+  }
 }
 
 .modal {
-  width: 528px;
-  height: 581px;
+  padding: 15px;
   background-color: rgba(255, 255, 255, 1);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
   transition: 250ms var(--cubic-bezier);
+  padding: 40px;
+  position: relative;
+
+  @media screen and(min-width:758px) {
+    max-width: 450px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: 250ms var(--cubic-bezier);
+  }
 }
 
-.modal {
-  padding: 40px;
-}
+// .modal {
+//   width: 100vw;
+//   height: 100vh;
+//   background-color: rgba(255, 255, 255, 1);
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%) scale(1);
+//   transition: 250ms var(--cubic-bezier);
+//   padding: 40px;
+// }
 
 .modal__close {
   display: flex;
@@ -115,7 +135,10 @@
 }
 
 .icon__text {
-  font-size: 14px;
+  font-size: 12px;
+  @media screen and(min-width:1200px) {
+    font-size: 12px;
+  }
   justify-content: center;
   letter-spacing: 0.03em;
   color: #757575;
